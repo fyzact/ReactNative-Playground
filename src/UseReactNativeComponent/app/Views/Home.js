@@ -2,17 +2,22 @@
 import React from "react"
 import { View,StyleSheet,Text } from "react-native";
  import { Header } from "../sections/Header.js";
+import { Hero } from "../sections/Hero.js";
+import { Menu } from "../sections/Menu.js";
+import {NavigationStackAction} from 'react-navigation'
+
 
 
  export class Home extends React.Component{
      render(){
 
-     
+     const {navigate}=this.props.navigation;
          return (
             <View style={styles.container}>
                 <Header message='Press to Login'></Header>
-            <Text style={{flex:8}}>This will be home page </Text>
-            <Text style={{flex:6}}> These other lines</Text>
+            
+            <Hero></Hero>
+             <Menu navigate={navigate}></Menu> 
 
             </View>
          );
