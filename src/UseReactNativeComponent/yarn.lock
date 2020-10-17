@@ -1141,6 +1141,12 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
+"@react-native-community/async-storage@react-native-community/async-storage":
+  version "1.12.1"
+  resolved "https://codeload.github.com/react-native-community/async-storage/tar.gz/2f504f3e3493002c34a0cd3d96c4bb75fac6db82"
+  dependencies:
+    deep-assign "^3.0.0"
+
 "@react-native-community/cli-debugger-ui@^4.9.0":
   version "4.9.0"
   resolved "https://registry.yarnpkg.com/@react-native-community/cli-debugger-ui/-/cli-debugger-ui-4.9.0.tgz#4177764ba69243c97aa26829d59d9501acb2bd71"

@@ -14,7 +14,7 @@ import {NavigationStackAction} from 'react-navigation'
      const {navigate}=this.props.navigation;
          return (
             <View style={styles.container}>
-                <Header message='Press to Login'></Header>
+                <Header navigate={navigate} message='Press to Login'></Header>
             
             <Hero></Hero>
              <Menu navigate={navigate}></Menu> 

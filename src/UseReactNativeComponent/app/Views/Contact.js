@@ -27,9 +27,10 @@ export class Contact extends React.Component{
     }
 
     render (){
+        const {navigate}=this.props.navigation;
         return (
             <View style={styles.container}>
-                <Header message='Press to Login'></Header>
+                <Header navigate={navigate} message='Press to Login'></Header>
                 <Text style={styles.heading} >
                Contact Uss
                 </Text>
@@ -70,19 +71,18 @@ var styles=StyleSheet.create({
 
     },
     heading:{
-        flex:1,
+        // flex:1,
         fontSize:16
 
     },
     inputs:{
-        flex:1,
+        // flex:1,
         width:'80%',
         padding:10,
-        
         borderBottomWidth:1
     },
     multiInputs:{
-        flex:2,
+        // flex:2,
         width:'90%',
         paddingTop:20,
         borderBottomWidth:1
