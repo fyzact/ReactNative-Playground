@@ -18,7 +18,7 @@ export class Quiz extends React.Component{
 
     scoreUpdate=(penalty)=>{
         let tempScore=this.state.totalScore;
-        let missed=this.state.incorret;
+        let missed=this.state.incorrect;
         let questionsTotal=this.state.numberOfQuestions;
         let questionsDone=this.state.questionAnswered;
 
@@ -128,13 +128,13 @@ const styles=StyleSheet.create({
         alignItems:'center',
         justifyContent:'center',
         backgroundColor:'#d3d3d3',
-        height:'10%'
+        height:'30%'
     },
     enabled:{
         alignItems:'center',
         justifyContent:'center',
         backgroundColor:'#90ee90',
-        height:'10%'
+        height:'30%'
     }
 
 

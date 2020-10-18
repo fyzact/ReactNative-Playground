@@ -14,7 +14,7 @@ export class Questions extends React.Component{
 
     chooseAnswer=(ans)=>{
         let worth=25;
-        if(ans===this.props.correcAnswer){
+        if(ans===this.props.correctAnswer){
             this.setState({
             selected:true,
             correct:true   

@@ -56,7 +56,7 @@ function RootStack() {
       
       />
          <Stack.Screen
-        name="QuizFinihRT"
+        name="FinishRT"
         component={QuizFinish}
       
       />

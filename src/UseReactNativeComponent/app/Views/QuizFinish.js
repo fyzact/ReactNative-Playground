@@ -18,14 +18,14 @@ export class QuizFinish extends React.Component{
     exitQuiz=()=>this.props.navigation.navigate("HomeRT");
 
     render(){
-        let userScore=this.props.navigation.getParam('score','Error-No Score Returned');
+        let userScore=this.props.route.params.score;
          
-        let questionsMissed=this.props.navigation.getParam('missed','Error-No Missed Questions'); 
-        let totalQuestions=this.props.navigation.getParam('questions','No Questions Returned');
+        let questionsMissed=this.props.route.params.missed;
+        let totalQuestions=this.props.route.params.questions;
 
         return (
             <View style={styles.container}>
-                <Text>your quiz score was {}</Text>
+                <Text>your quiz score was {userScore}</Text>
                 <Text>your missed on   {questionsMissed} out of {totalQuestions} questions</Text>
                 <TouchableHighlight onPress={this.exitQuiz} style={styles.buttons}>
                     <Text>Finih Quiz</Text>
