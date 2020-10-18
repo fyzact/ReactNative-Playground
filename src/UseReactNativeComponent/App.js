@@ -10,6 +10,8 @@ import { VideoDetail } from "./app/Views/VideoDetail";
 import { registerRootComponent } from "expo";
 import { Register } from "./app/Views/Register";
 import { Login } from "./app/Views/Login";
+import { Quiz } from "./app/Views/Quiz";
+import { QuizFinish } from "./app/Views/QuizFinish";
 const Stack = createStackNavigator();
 
 function RootStack() {
@@ -46,6 +48,16 @@ function RootStack() {
         <Stack.Screen
         name="LoginRT"
         component={Login}
+      
+      />
+         <Stack.Screen
+        name="QuizRT"
+        component={Quiz}
+      
+      />
+         <Stack.Screen
+        name="QuizFinihRT"
+        component={QuizFinish}
       
       />
     </Stack.Navigator>

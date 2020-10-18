@@ -4,7 +4,7 @@ import {StyleSheet,View,Text,TouchableHighlight} from 'react-native'
 export class Questions extends React.Component{
 
     constructor(props){
-        super(prop)
+        super(props)
 
         this.state={
             selected:false,
@@ -32,7 +32,7 @@ export class Questions extends React.Component{
 
     render (){
         return (
-            <View style={}>
+            <View style={styles.container}>
                 {
                     !this.state.selected && (
                         <View style={styles.container}>
