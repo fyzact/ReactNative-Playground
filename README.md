@@ -1,2 +1,2 @@
 # React Native Playground
-Sample projet that I developed while I learn React Native
+Sample project that I developed while I learn React Native
